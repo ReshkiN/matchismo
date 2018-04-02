@@ -1,0 +1,26 @@
+//
+//  PrefixMatchismo.pch
+//  Matchismo
+//
+//  Created by Dmitry Reshetnik on 8/22/17.
+//  Copyright © 2017 Dmitry Reshetnik. All rights reserved.
+//
+
+#ifndef PrefixMatchismo_pch
+#define PrefixMatchismo_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifndef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
+#endif /* PrefixMatchismo_pch */
